@@ -11,7 +11,6 @@ def create_person_list(people: list) -> list:
     Person.people = {}
     for person in people:
         Person(person["name"], person["age"])
-
     for person in people:
         one_of_marrieds = Person.people[person["name"]]
         if "wife" in person and person["wife"] in Person.people:
